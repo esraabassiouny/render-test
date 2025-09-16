@@ -5,7 +5,7 @@ const protect = require("../middlewares/auth");
 
 const router = express.Router()
 
-router.get('/me', protect, userController.getMe)
+router.get('/me', userController.getMe)
 
 
 module.exports = router;
