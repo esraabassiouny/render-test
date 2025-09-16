@@ -14,6 +14,6 @@ app.use('/api/auth',authRoutes)
 
 app.use('/api/users',userRoutes)
 
-const port = process.env.PORT;
+const port = process.env.PORT || 100;
 
 app.listen(port)
